@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <title>測試首頁</title>
+
 <!-- CSS -->
 <!-- jquery ui -->
 <link rel="stylesheet"
@@ -12,6 +13,8 @@
 	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
 <link rel="stylesheet"
 	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" />
+<!-- custom -->
+<link href="css/style.css" rel="stylesheet" type="text/css" />
 
 
 <!-- JS -->
@@ -25,15 +28,23 @@
 <script
 	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <!-- GSAP -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.4/TweenMax.min.js"></script>
+<script
+	src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.4/TweenMax.min.js"></script>
 
 </head>
+
 <body>
-	<h2 id="box">測試內容</h2>
+	<h2>測試內容</h2>
+	<img alt="Lighthouse" src="image/Lighthouse.jpg" id="box"
+		onclick="test()" />
+	<img alt="Jellyfish" src="image/Jellyfish.jpg" id="box2" />
 
 	<script>
 		var $box = $('#box');
-		TweenLite.to($box, 2, {autoAlpha: 0});
+
+		function test(){
+			TweenLite.to($box, 5, {autoAlpha: 0});
+		}
 	</script>
 </body>
 </html>
