@@ -24,9 +24,16 @@
 <!-- bootstrap -->
 <script
 	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<!-- GSAP -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.4/TweenMax.min.js"></script>
 
 </head>
 <body>
-測試內容
+	<h2 id="box">測試內容</h2>
+
+	<script>
+		var $box = $('#box');
+		TweenLite.to($box, 2, {autoAlpha: 0});
+	</script>
 </body>
 </html>
